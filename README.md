@@ -49,6 +49,17 @@ Use **STM32CubeMX** to:
 - Open the STM32 project folder
 - Install the **Cortex-Debug** extension for flashing and debugging
 
+**###⚠️ Troubleshooting
+**
+❗ Model Save Error:
+Use tf.saved_model.save(model, "tmnist_model") instead of the Keras 3-deprecated save method.
+
+❗ Quantization Error:
+Make sure tmnist_model/ exists before running quantize_tmnist.py.
+
+❗ Conversion Error:
+Double-check model_data.cc is formatted as a valid C array.
+
 
 
 
