@@ -34,5 +34,9 @@ Install dependencies:
 
 ```bash
 pip install tensorflow numpy
+python quantize_tmnist.py
+python convert_to_c_array.py
 
+**## 1. Deploy to STM32 with VS Code
+**
 
