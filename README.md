@@ -67,6 +67,14 @@ Make sure tmnist_model/ exists before running quantize_tmnist.py.
 ❗ Conversion Error:
 Double-check model_data.cc is formatted as a valid C array.
 
+### Resources:
+
+STM32CubeMX Documentation (ST):
+https://www.st.com/en/development-tools/stm32cubemx.html
+
+Using VS Code for STM32 Development (ST Blog & Tutorials):
+STM32 in Visual Studio Code: Setup & Debugging Guide
+https://www.st.com/resource/en/user_manual/um2576-getting-started-with-stm32cubemx-for-vscode-stmicroelectronics.pdf
 
 
 
