@@ -14,11 +14,17 @@ This repository demonstrates how to:
 
 project/
 ├── train_tmnist.py # Trains and saves the model in SavedModel format
+
 ├── quantize_tmnist.py # Converts the model to quantized TFLite
+
 ├── convert_to_c_array.py # Converts .tflite to C array (.cc file)
+
 ├── tmnist_model/ # SavedModel directory
+
 ├── tmnist_quant.tflite # Quantized model
+
 ├── model_data.cc # TFLite model as a C array
+
 └── README.md
 
 ## 1. Train the Model
