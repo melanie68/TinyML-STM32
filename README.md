@@ -32,11 +32,23 @@ project/
 
 Install dependencies:
 
-```bash
 pip install tensorflow numpy
-python quantize_tmnist.py
-python convert_to_c_array.py
 
-**## 1. Deploy to STM32 with VS Code
-**
+## 🔌 Step 2: Deploy on STM32 with VS Code
+
+### 🧩 Setup STM32 Project
+
+Use **STM32CubeMX** to:
+
+- Enable required peripherals (e.g., **USART2** for UART debugging)
+- Enable **CUBEX AI**
+- Generate the code (select **STM32CubeIDE** format)
+
+### In VS Code:
+
+- Open the STM32 project folder
+- Install the **Cortex-Debug** extension for flashing and debugging
+
+
+
 
