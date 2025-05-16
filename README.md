@@ -34,12 +34,12 @@ Install dependencies:
 
 pip install tensorflow numpy
 
-**Quantize the Model
-**
+Quantize the Model:
+
 python quantize_tmnist.py
 
-**Convert to C Array
-**
+Convert to C Array:
+
 python convert_to_c_array.py
 
 ## 🔌 Step 2: Deploy on STM32 with VS Code
