@@ -13,6 +13,7 @@ This repository demonstrates how to:
 ## 📁 Folder Structure
 
 project/
+
 ├── train_tmnist.py # Trains and saves the model in SavedModel format
 
 ├── quantize_tmnist.py # Converts the model to quantized TFLite
