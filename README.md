@@ -31,10 +31,29 @@ project/
 ## 1. Train the Model
 
 Install dependencies:
-```
+```bash
 pip install tensorflow numpy
 ```
+### Script : train_nmist.py
+1. Trains a model on the TMNIST dataset.
 
+2. Saves in a regular (float32) TFLite model
+ 
+```python
+converter = tf.lite.TFLiteConverter.from_keras_model(model)
+tflite_model = converter.convert()
+```
+3. Apply quantization
+
+```python
+converter.optimizations = [tf.lite.Optimize.DEFAULT]
+converter.representative_dataset = representative_dataset
+converter.target_spec.supported_ops = [tf.lite.OpsSet.TFLITE_BUILTINS_INT8]
+converter.inference_input_type = tf.int8
+converter.inference_output_type = tf.int8
+quantized_tflite_model = converter.convert()
+
+```
 
 ## 🔌 Step 2: Deploy on STM32 with VS Code
 
