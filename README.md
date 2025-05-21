@@ -14,9 +14,7 @@ This repository demonstrates how to:
 
 project/
 
-├── train_tmnist.py # Trains and saves the model in SavedModel format
-
-├── quantize_tmnist.py # Converts the model to quantized TFLite
+├── train_tmnist.py # Trains, quantizes, and saves the model in TFLite format
 
 ├── convert_to_c_array.py # Converts .tflite to C array (.cc file)
 
@@ -43,6 +41,12 @@ pip install tensorflow numpy
 converter = tf.lite.TFLiteConverter.from_keras_model(model)
 tflite_model = converter.convert()
 ```
+❗Important❗
+Make sure to have the correct path to your csv data file 
+```python
+x, y = load_tmnist("C:\\Users\\jcuen\\Downloads\\archive (1)\\tmnist.csv") # add the path to your file
+```
+
 3. Apply quantization
 
 ```python
@@ -54,6 +58,9 @@ converter.inference_output_type = tf.int8
 quantized_tflite_model = converter.convert()
 
 ```
+4. Output 
+ a. tmnist_model.tflite → float32
+ b. mnist_quantized.tflite → fully quantized int8 model
 
 ## 🔌 Step 2: Deploy on STM32 with VS Code
 
