@@ -26,7 +26,7 @@ project/
 
 └── README.md
 
-## 1. Train the Model
+## Step 1: Train the Model
 
 Install dependencies:
 ```bash
@@ -68,9 +68,9 @@ quantized_tflite_model = converter.convert()
 
 Use **STM32CubeMX** to:
 
-- Enable required peripherals (e.g., **USART2** for UART debugging)
-- Enable **CUBEX AI**
-- Generate the code (select **STM32CubeIDE** format)
+- Create a new project 
+In this example the board being used is **STM32: NUCLEO-U031R8**
+
 
 ### In VS Code:
 
