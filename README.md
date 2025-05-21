@@ -59,8 +59,9 @@ quantized_tflite_model = converter.convert()
 
 ```
 4. Output 
- a. tmnist_model.tflite → float32
- b. mnist_quantized.tflite → fully quantized int8 model
+tmnist_model.tflite → float32
+
+mnist_quantized.tflite → fully quantized int8 model
 
 ## 🔌 Step 2: Deploy on STM32 with VS Code
 
@@ -68,7 +69,8 @@ quantized_tflite_model = converter.convert()
 
 Use **STM32CubeMX** to:
 
-- Create a new project 
+**Create a new project**
+
 In this example the board being used is **STM32: NUCLEO-U031R8**
 
 
