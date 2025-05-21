@@ -73,7 +73,9 @@ Use **STM32CubeMX** to:
 
 In this example the board being used is **STM32: NUCLEO-U031R8**
 
+**Step 1:** Pick your board in **Board Selector** tab
 
+![Board Selector](images\image.png) 
 ### In VS Code:
 
 - Open the STM32 project folder
