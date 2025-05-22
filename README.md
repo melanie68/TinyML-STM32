@@ -87,30 +87,32 @@ Use **STM32CubeMX** to:
 
 In this example the board being used is **STM32: NUCLEO-U031R8**
 
-**Step 1:** Pick your board in **Board Selector**
+**1:** Pick your board in **Board Selector**
 
 ![Board Selector](images/image.png) 
 
-**Step 2:** Keep default pinout configuration 
+**2:** Keep default pinout configuration 
 ![Pinout](images/image_2.png) 
 
-**Step 3:** Make sure to have **X-CUBE-AI** as part of your [**Software Packages**](https://www.st.com/en/embedded-software/x-cube-ai.html)
+**3:** Make sure to have **X-CUBE-AI** as part of your [**Software Packages**](https://www.st.com/en/embedded-software/x-cube-ai.html)
 
 ![Pinout](images/image_3.png) 
 
-**Step 4:** Click on **Generate Code** button and name the project
+**4:** Click on **Generate Code** button and name the project
 
-### In VS Code:
+### Step 4: Drop into STM32 Project (CubeIDE)
+1. Create a folder in your STM32 project called Core/Src/ (or wherever your .c/.cpp files go).
 
-- Open the STM32 project folder
-- Install the **Cortex-Debug** extension for flashing and debugging
+2. Add model_data.cc there.
+
+3. In your main.c or main.cpp, you can reference:
+
+```c
+extern const unsigned char tmnist_quant_tflite[];
+extern const int tmnist_quant_tflite_len;
+```
 
 ### Troubleshooting:
-❗ Model Save Error:
-Use tf.saved_model.save(model, "tmnist_model") instead of the Keras 3-deprecated save method.
-
-❗ Quantization Error:
-Make sure tmnist_model/ exists before running quantize_tmnist.py.
 
 ❗ Conversion Error:
 Double-check model_data.cc is formatted as a valid C array.
