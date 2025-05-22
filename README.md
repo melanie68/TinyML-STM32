@@ -100,7 +100,7 @@ In this example the board being used is **STM32: NUCLEO-U031R8**
 
 **4:** Click on **Generate Code** button and name the project
 
-### Step 4: Drop into STM32 Project (CubeIDE)
+## Step 4: Drop into STM32 Project (CubeIDE)
 1. Create a folder in your STM32 project called Core/Src/ (or wherever your .c/.cpp files go).
 
 2. Add model_data.cc there.
