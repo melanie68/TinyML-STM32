@@ -118,14 +118,27 @@ Then click Run > Debug or Run > Run to flash.
 
 ### Troubleshooting:
 
-❗ Conversion Error:
+❗ **Conversion Error**:
 Double-check model_data.cc is formatted as a valid C array.
+
+❗**TFLite conversion error**:
+Ensure quantization config is set before calling converter.convert()
+
+❗**Model doesn’t run on STM32**	
+Check RAM usage and confirm X-CUBE-AI version is supported
+
+❗**xxd not found on Windows**
+Use convert_to_c_array.py instead
 
 ### Resources:
 
 [STM32CubeMX Documentation (ST)](https://www.st.com/en/development-tools/stm32cubemx.html)
 
 [Using VS Code for STM32 Development (ST Blog & Tutorials)](https://www.st.com/resource/en/user_manual/um2576-getting-started-with-stm32cubemx-for-vscode-stmicroelectronics.pdf)
+
+[TinyML: Getting Started with STM32 X-CUBE-AI | Digi-Key Electronics Video](https://www.youtube.com/watch?v=crJcDqIUbP4&t=378s)
+
+[TinyML: Getting Started with TensorFlow Lite for Microcontrollers | Digi-Key Electronics Video](https://www.youtube.com/watch?v=gDFWCxrJruQ&t=524s)
 
 
 
