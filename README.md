@@ -81,6 +81,7 @@ In this example the board being used is **STM32: NUCLEO-U031R8**
 ![Pinout](images/image_2.png) 
 
 **Step 3:** Make sure to have **X-CUBE-AI** as part of your **Software Packages**
+
 ![Pinout](images/image_3.png) 
 
 
