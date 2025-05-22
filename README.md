@@ -63,6 +63,17 @@ quantized_tflite_model = converter.convert()
 
 - mnist_quantized.tflite → fully quantized int8 model
 
+5. Convert to a C Array
+```bash
+xxd -i tmnist_quant.tflite > model_data.cc
+```
+This creates a C++ source file (model_data.cc) that you can compile into your STM32.
+
+If you are on Windows you can use the convert_to_c_array.py file and run the following command:
+```bash
+python convert_to_c_array.py
+```
+
 ## 🔌 Step 2: Deploy on STM32 with VS Code
 
 ### 🧩 Setup STM32 Project
@@ -84,6 +95,7 @@ In this example the board being used is **STM32: NUCLEO-U031R8**
 
 ![Pinout](images/image_3.png) 
 
+**Step 4:** Click on **Generate Code** button and name the project
 
 ### In VS Code:
 
