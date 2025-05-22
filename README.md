@@ -18,11 +18,9 @@ project/
 
 ├── convert_to_c_array.py # Converts .tflite to C array (.cc file)
 
-├── tmnist_model/ # SavedModel directory
+├── data/ # has dummy data (data.csv) to run
 
 ├── tmnist_quant.tflite # Quantized model
-
-├── model_data.cc # TFLite model as a C array
 
 └── README.md
 
@@ -111,6 +109,12 @@ In this example the board being used is **STM32: NUCLEO-U031R8**
 extern const unsigned char tmnist_quant_tflite[];
 extern const int tmnist_quant_tflite_len;
 ```
+## Step 5: Run & Flash
+If you're using **STM32CubeIDE:**
+
+Click Project > Build.
+
+Then click Run > Debug or Run > Run to flash.
 
 ### Troubleshooting:
 
@@ -119,12 +123,9 @@ Double-check model_data.cc is formatted as a valid C array.
 
 ### Resources:
 
-STM32CubeMX Documentation (ST):
-https://www.st.com/en/development-tools/stm32cubemx.html
+[STM32CubeMX Documentation (ST)](https://www.st.com/en/development-tools/stm32cubemx.html)
 
-Using VS Code for STM32 Development (ST Blog & Tutorials):
-STM32 in Visual Studio Code: Setup & Debugging Guide
-https://www.st.com/resource/en/user_manual/um2576-getting-started-with-stm32cubemx-for-vscode-stmicroelectronics.pdf
+[Using VS Code for STM32 Development (ST Blog & Tutorials)](https://www.st.com/resource/en/user_manual/um2576-getting-started-with-stm32cubemx-for-vscode-stmicroelectronics.pdf)
 
 
 
