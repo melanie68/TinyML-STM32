@@ -73,12 +73,17 @@ Use **STM32CubeMX** to:
 
 In this example the board being used is **STM32: NUCLEO-U031R8**
 
-**Step 1:** Pick your board in **Board Selector** tab
+**Step 1:** Pick your board in **Board Selector**
 
 ![Board Selector](images/image.png) 
 
 **Step 2:** Keep default pinout configuration 
-![Board Selector](images/image.png) 
+![Pinout](images/image_2.png) 
+
+**Step 3:** Make sure to have **X-CUBE-AI** as part of your **Software Packages**
+![Pinout](images/image_3.png) 
+
+
 ### In VS Code:
 
 - Open the STM32 project folder
