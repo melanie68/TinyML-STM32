@@ -64,12 +64,15 @@ quantized_tflite_model = converter.convert()
 - mnist_quantized.tflite → fully quantized int8 model
 
 5. Convert to a C Array
+
+This creates a C++ source file (model_data.cc) that you can compile into your STM32.
+
 ```bash
 xxd -i tmnist_quant.tflite > model_data.cc
 ```
-This creates a C++ source file (model_data.cc) that you can compile into your STM32.
 
-If you are on Windows you can use the convert_to_c_array.py file and run the following command:
+If you are on Windows you can use the **convert_to_c_array.py** file and run the following command:
+
 ```bash
 python convert_to_c_array.py
 ```
