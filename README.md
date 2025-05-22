@@ -18,7 +18,7 @@ project/
 
 ├── convert_to_c_array.py # Converts .tflite to C array (.cc file)
 
-├── data/ # has dummy data (data.csv) to run
+├── data/ # has dummy data (tmnist.csv) to run
 
 ├── tmnist_quant.tflite # Quantized model
 
